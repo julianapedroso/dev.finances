@@ -1,8 +1,9 @@
 :root {
   --dark-blue: #363f5f;
-  --ligth-green: #2d4a;
   --dark-green: #19a759;
-  --green: #4fb639;
+  --green: #4fb839;
+  --ligth-green: #2d4a;
+  --very-light-green: #3dd705;
   --white: #fff;
   --ice: #f0f2f5;
   --red: #e92929;
@@ -18,9 +19,15 @@ html {
   font-size: 93.75%;
 }
 
-body {
+body,
+button {
   background: var(--ice);
   font-family: "Poppins", sans-serif;
+}
+
+#logo {
+  margin-top: 1.5rem;
+  width: 45%;
 }
 
 .sr-only {
@@ -59,14 +66,44 @@ a:hover {
   transform: 300ms;
 }
 
-.button.new {
-  display: inline-block;
-  margin-bottom: .8rem;
+button {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 0.25rem;
+  background: var(--green);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1rem;
+
+  cursor: pointer;
 }
 
-#logo {
+button:hover {
+  background: var(--very-light-green);
+}
+
+.button.new {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.button.cancel {
+  background: var(--red);
   color: var(--white);
-  font-weight: 300;
+  border: 2px solid var(--red);
+  border-radius: 0.25rem;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0.9;
+}
+
+.button.cancel:hover {
+  opacity: 1;
 }
 
 .container {
@@ -107,7 +144,7 @@ a:hover {
 
 .card.total {
   background: var(--green);
-  color: #fff;
+  color: var(--white);
 }
 
 #transaction {
@@ -168,7 +205,7 @@ table tbody tr:hover {
 .modal-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   display: flex;
@@ -189,9 +226,44 @@ table tbody tr:hover {
   padding: 2.4rem;
 }
 
+#form {
+  max-width: 500px;
+}
+
+#form h2 {
+  margin-top: 0;
+}
+
+input {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.input-group {
+  margin-top: 0.8rem;
+}
+
+.input-group small {
+  opacity: 0.4;
+}
+
+.input-group.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+  width: 48%;
+}
+
 footer {
   background: var(--white);
   position: static;
+  width: 100%;
   bottom: 0;
   text-align: center;
   margin-top: 3rem;
@@ -204,6 +276,10 @@ footer {
 @media (min-width: 800px) {
   html {
     font-size: 87.5%;
+  }
+
+  #logo {
+    width: 15%;
   }
 
   #balance {
