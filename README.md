@@ -1,5 +1,5 @@
 <h2 align='center'>
-PROJETO - PROGRAMA FINANCEIRO
+PROJETO - DEV.FINANCE💲
 </h2>
 
 <h4 align='center'>
@@ -8,26 +8,29 @@ PROJETO - PROGRAMA FINANCEIRO
 
 ### ✨ Funcionamento:
 
-- [x] Teste
-- [x] Teste
-- [x] Teste
+- [x] Entradas
+- [x] Saídas
+- [x] Total
+- [ ] Adicionar transação
+- [x] Tabela com os campos:
+  - [x] Descrição
+  - [x] Valor
+  - [x] Data
+- [x] Model:
+  - [x] Descrição
+  - [x] Valor
+  - [x] Data
+  - [x] Cancelar ação
+- [x] Responsividade para mobile e desktop
 
 ### 💻 Tecnologias:
 
 As seguintes tecnologias foram usadas na construção do projeto:
 
-- [React](https://pt-br.reactjs.org/)
+- HTML
 - [JavaScript](https://www.javascript.com/)
 
 ### 🎨 Layout:
 
 - CSS
 
-### 🛠 Ferramentas:
-
-As seguintes ferramentas foram usadas na construção do projeto:
-
-- [Trello](https://trello.com/pt-BR)
-- [MockFlow](https://mockflow.com/app/#Wireframe)
-- [Color Tool](https://material.io/resources/color/#!/?view.left=0&view.right=0)
-- [Canva](https://www.canva.com/)
