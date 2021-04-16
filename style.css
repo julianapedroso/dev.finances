@@ -287,4 +287,21 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+
+  .modal-overlay {
+    bottom: 0;
+  }
+
+  footer {
+    background: var(--white);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 0 2rem;
+    color: var(--dark-blue);
+
+    opacity: 0.6;
+  }
 }
