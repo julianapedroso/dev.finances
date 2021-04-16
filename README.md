@@ -2,6 +2,10 @@
 PROJETO - DEV.FINANCE💲
 </h2>
 
+<h2 align='center'>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/julianapedroso/dev.finances"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/julianapedroso/dev.finances">
+</h2>
+
 <h4 align='center'>
 👉 Status: 🚧 Em construção... 🚧
 </h4>
