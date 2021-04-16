@@ -16,19 +16,17 @@ http://dev.finances.surge.sh/
 
 ### ✨ Funcionamento:
 
-- [x] Entradas
-- [x] Saídas
-- [x] Total
+- [x] Registro de Entradas
+- [x] Registro de Saídas
+- [x] Cálculo do Total
 - [x] Adicionar transação
 - [x] Remover transação
 - [x] Tabela com os campos:
   - [x] Descrição
   - [x] Valor
   - [x] Data
-- [x] Model:
-  - [x] Descrição
-  - [x] Valor
-  - [x] Data
+- [x] Modal:
+  - [x] Salvar transação
   - [x] Cancelar ação
 - [x] Responsividade para mobile e desktop
 
