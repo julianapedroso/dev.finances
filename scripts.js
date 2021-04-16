@@ -111,6 +111,17 @@ const DOM = {
 };
 
 const Utils = {
+  formatAmount(amount) {
+    amount = Number(amount) * 100
+
+    return amount
+  },
+
+  formatDate(date) {
+    const splittedDate = date.split("-")
+    return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`
+  },
+
   formatCurrency(value) {
     const signal = Number(value) < 0 ? "-" : "";
 
@@ -147,7 +158,21 @@ const Form = {
   },
 
   formatData() {
+    let { description, amount, date } = Form.getValues()
 
+    amount = Utils.formatAmount(amount)
+
+    date = Utils.formatDate(date)
+
+    return {
+      description,
+      amount,
+      date
+    }
+  },
+
+  saveTransaction() {
+    Transaction.add(transaction)
   },
 
   submit(event) {
@@ -155,7 +180,9 @@ const Form = {
 
     try {
       Form.validateFields()
-      // Form.formatData()
+      const transaction = Form.formatData()
+
+      Form.saveTransaction()
 
     } catch (error) {
       alert(error.message)
