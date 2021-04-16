@@ -294,7 +294,7 @@ footer {
 
   footer {
     background: var(--white);
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     text-align: center;
