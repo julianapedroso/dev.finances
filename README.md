@@ -15,7 +15,8 @@ PROJETO - DEV.FINANCE💲
 - [x] Entradas
 - [x] Saídas
 - [x] Total
-- [ ] Adicionar transação
+- [x] Adicionar transação
+- [x] Remover transação
 - [x] Tabela com os campos:
   - [x] Descrição
   - [x] Valor
