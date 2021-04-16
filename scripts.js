@@ -7,24 +7,18 @@ const Modal = {
   },
 };
 
+const Storage = {
+  get() {
+    return JSON.parse(localStorage.getItem("dev.finances:transactions")) || []
+  },
+
+  set(transactions) {
+    localStorage.setItem("dev.finances:transactions", JASON.stringify(transactions))
+  }
+}
+
 const Transaction = {
-  all: [
-    {
-      description: "Luz",
-      amount: -10000,
-      date: "01/01/2021",
-    },
-    {
-      description: "Aluguel",
-      amount: -45000,
-      date: "20/01/2021",
-    },
-    {
-      description: "Freelas",
-      amount: 20000,
-      date: "01/02/2021",
-    },
-  ],
+  all: Storage.get(),
 
   add(transaction) {
     Transaction.all.push(transaction);
