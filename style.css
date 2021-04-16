@@ -21,6 +21,7 @@ html {
 
 body,
 button {
+  position: relative;
   background: var(--ice);
   font-family: "Poppins", sans-serif;
 }
@@ -172,7 +173,7 @@ td.description {
 }
 
 td.income {
-  color: var(--ligth-green);
+  color: var(--green);
 }
 
 td.expense {
@@ -224,6 +225,7 @@ table tbody tr:hover {
 .modal {
   background: var(--ice);
   padding: 2.4rem;
+  border-radius: 0.25rem;
 }
 
 #form {
@@ -245,7 +247,7 @@ input {
   margin-top: 0.8rem;
 }
 
-.input-group small {
+.input-group .help {
   opacity: 0.4;
 }
 
@@ -295,10 +297,8 @@ footer {
   footer {
     background: var(--white);
     position: fixed;
-    width: 100%;
     bottom: 0;
     text-align: center;
-    margin-top: 3rem;
     padding: 2rem 0 2rem;
     color: var(--dark-blue);
 
