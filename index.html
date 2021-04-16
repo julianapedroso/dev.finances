@@ -11,11 +11,11 @@
       rel="stylesheet"
     />
 
-    <title>Programa Financeiro</title>
+    <title>dev.finance$</title>
   </head>
   <body>
     <header>
-      <img src="./assets/logo.svg" alt="Logo Dev Finances">
+      <img src="./assets/logo.svg" alt="Logo Dev Finances" />
     </header>
 
     <main class="container">
@@ -25,7 +25,7 @@
         <div class="card">
           <h3>
             <span>Entradas</span>
-            <img src="./assets/income.svg" alt="Imagem de entradas">
+            <img src="./assets/income.svg" alt="Imagem de entradas" />
           </h3>
           <p>R$ 5.000,00</p>
         </div>
@@ -33,7 +33,7 @@
         <div class="card">
           <h3>
             <span>Saídas</span>
-            <img src="./assets/expense.svg" alt="Imagem de saídas">
+            <img src="./assets/expense.svg" alt="Imagem de saídas" />
           </h3>
           <p>R$ 2.000,00</p>
         </div>
@@ -41,7 +41,7 @@
         <div class="card total">
           <h3>
             <span>Total</span>
-            <img src="./assets/total.svg" alt="Imagem de total">
+            <img src="./assets/total.svg" alt="Imagem de total" />
           </h3>
           <p>R$ 3.000,00</p>
         </div>
@@ -50,36 +50,82 @@
       <section id="transaction">
         <h2 class="sr-only">Transações</h2>
 
+        <a href="#" class="button new">+ nova transação</a>
+
         <table id="data-table">
           <thead>
             <tr>
               <th>Descrição</th>
               <th>Valor</th>
               <th>Data</th>
+              <th></th>
             </tr>
           </thead>
+
           <tbody>
             <tr>
               <td class="description">Luz</td>
               <td class="expense">- R$ 100,00</td>
               <td class="date">23/01/2021</td>
+              <td>
+                <img src="./assets/minus.svg" alt="Imagem de remover" />
+              </td>
             </tr>
-
+            
             <tr>
               <td class="description">Aluguel</td>
               <td class="expense">-R$ 450,00</td>
               <td class="date">20/01/2021</td>
+              <td>
+                <img src="./assets/minus.svg" alt="Imagem de remover" />
+              </td>
             </tr>
 
             <tr>
               <td class="description">Freelas</td>
               <td class="income">R$ 1.000,00</td>
               <td class="date">16/01/2021</td>
+              <td>
+                <img src="./assets/minus.svg" alt="Imagem de remover" />
+              </td>
             </tr>
           </tbody>
         </table>
       </section>
     </main>
+
+    <div class="modal-overlay active">
+      <div class="modal">
+        <div id="form">
+          <h2>Nova Transação</h2>
+          <form action="">
+            <div class="input-group">
+                <label 
+                  class="sr-only" 
+                  for="description">Descrição</label>
+                <input 
+                  type="text" 
+                  id="description" 
+                  name ="description"
+                  placeholder="Descrição"
+                />
+            </div>
+
+            <div class="input-group">
+              <label 
+                class="sr-only" 
+                for="amount">Descrição</label>
+              <input 
+                type="number" 
+                id="amount" 
+                name ="amount"
+                placeholder="Descrição"
+              />
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <p>dev.finance$</p>

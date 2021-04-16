@@ -1,7 +1,10 @@
 :root {
   --dark-blue: #363f5f;
   --ligth-green: #2d4a;
+  --dark-green: #19a759;
+  --green: #4fb639;
   --white: #fff;
+  --ice: #f0f2f5;
   --red: #e92929;
 }
 
@@ -11,8 +14,12 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 93.75%;
+}
+
 body {
-  background: #f0f2f5;
+  background: var(--ice);
   font-family: "Poppins", sans-serif;
 }
 
@@ -22,6 +29,7 @@ body {
   height: 1px;
   padding: 0;
   margin: -1px;
+
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -40,6 +48,22 @@ h2 {
   color: var(--dark-blue);
 }
 
+a {
+  color: var(--dark-green);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--ligth-green);
+  transform: 300ms;
+}
+
+.button.new {
+  display: inline-block;
+  margin-bottom: .8rem;
+}
+
 #logo {
   color: var(--white);
   font-weight: 300;
@@ -51,7 +75,7 @@ h2 {
 }
 
 #balance {
-  margin-top: -8rem;
+  margin-top: -7rem;
 }
 
 #balance h2 {
@@ -62,8 +86,8 @@ h2 {
 .card {
   background: var(--white);
   color: var(--dark-blue);
-  padding: 1.5rem 2rem;
-  margin-bottom: 1.7rem;
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
   border-radius: 0.25rem;
 }
 
@@ -82,8 +106,13 @@ h2 {
 }
 
 .card.total {
-  background: var(--ligth-green);
+  background: var(--green);
   color: #fff;
+}
+
+#transaction {
+  display: block;
+  overflow-x: auto;
 }
 
 #data-table {
@@ -94,6 +123,11 @@ h2 {
 table thead tr th:first-child,
 table tbody tr td:first-child {
   border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+  border-radius: 0 0.25rem 0.25rem 0;
 }
 
 td.description {
@@ -131,6 +165,30 @@ table tbody tr:hover {
   transition: 300ms;
 }
 
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background: var(--ice);
+  padding: 2.4rem;
+}
+
 footer {
   background: var(--white);
   position: static;
@@ -139,5 +197,18 @@ footer {
   margin-top: 3rem;
   padding: 2rem 0 2rem;
   color: var(--dark-blue);
+
   opacity: 0.6;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  #balance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
