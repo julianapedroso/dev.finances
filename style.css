@@ -21,6 +21,7 @@ html {
 
 body,
 button {
+  position: relative;
   background: var(--ice);
   font-family: "Poppins", sans-serif;
 }
@@ -295,11 +296,9 @@ footer {
 
   footer {
     background: var(--white);
-    position: absolute;
-    width: 100%;
+    position: fixed;
     bottom: 0;
     text-align: center;
-    margin-top: 3rem;
     padding: 2rem 0 2rem;
     color: var(--dark-blue);
 
