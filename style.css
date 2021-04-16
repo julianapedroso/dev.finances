@@ -172,7 +172,7 @@ td.description {
 }
 
 td.income {
-  color: var(--ligth-green);
+  color: var(--green);
 }
 
 td.expense {
@@ -224,6 +224,7 @@ table tbody tr:hover {
 .modal {
   background: var(--ice);
   padding: 2.4rem;
+  border-radius: 0.25rem;
 }
 
 #form {
@@ -245,7 +246,7 @@ input {
   margin-top: 0.8rem;
 }
 
-.input-group small {
+.input-group .help {
   opacity: 0.4;
 }
 
