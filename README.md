@@ -1,5 +1,5 @@
 <h2 align='center'>
-PROJETO - DEV.FINANCE💲
+  <img src="https://raw.githubusercontent.com/julianapedroso/dev.finances/52356441deab051de524b68aa4f9eb00cfada1a2/assets/logo.svg" alt="Logo Dev Finances"/>
 </h2>
 
 <h2 align='center'>
